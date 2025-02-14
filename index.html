@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Gift for You ❤</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #8400ff, #f5007b);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            width: 90%;
+            max-width: 450px;
+            backdrop-filter: blur(15px);
+            text-align: center;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffccff;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 14px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            width: calc(100% - 30px);
+            margin: 15px 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+        button {
+            padding: 14px 25px;
+            font-size: 18px;
+            background: #ff5cff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            width: 100%;
+        }
+        button:hover {
+            background: #ffb3ff;
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 25px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .message {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        img {
+            width: 100%;
+            max-width: 320px;
+            margin-top: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            input, button {
+                font-size: 16px;
+                padding: 12px;
+            }
+            .message {
+                font-size: 18px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gift for My Deer Aqsa 💜</h1>
+        <h2>Enter Your Secret Password 💜</h2>
+        <input type="password" id="passwordInput" placeholder="Type your secret password">
+        <button onclick="checkPassword()">Unlock Your Gift</button>
+
+        <div class="hidden-content" id="surpriseContent">
+            <img src="imp.jpg" id="specialImage">
+            <p class="message"> "With you, the world feels perfect." </p>
+            <img src="imp2.jpg">
+            <p class="message"> "In your eyes, I see my dreams come alive." </p>
+            <img src="imp3.jpg">
+            <p class="message"> "You make my heart feel at home." </p>
+            <img src="imp4.jpg">
+            <p class="message"> "With you, everything feels right." </p>
+            <img src="imp5.jpg">
+            <p class="message"> "You are the reason I smile without even trying." </p>
+            <img src="imp6.jpg">
+            <p class="message"> "You are my favorite kind of happiness." </p>
+            <img src="imp7.jpg">
+            <p class="message"> "You make my heart feel at home." </p>
+            <img src="imp8.jpg">
+            <p class="message"> "You are my daily dose of joy!" </p>
+            <img src="imp9.jpg">
+            <p class="message"> "With you, every moment feels extra special!" </p>
+            <img src="imp10.jpg">
+            <p class="message"> "You make my heart smile in the silliest ways!" </p>
+            <img src="imp11.jpg">
+            <p class="message">"Life have more fun when you are around!" </p>
+            <img src="imp12.jpg">
+            <p class="message"> "You are the spark that lights up my day!"</p>
+            <img src="imp13.jpg">
+            <p class="message" style="font-size: 22px; font-weight: bold; color: #ffccff;"> You are the most special person in my life! 💜</p>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            let password = document.getElementById("passwordInput").value;
+            let correctPassword = "aqsa"; 
+            let content = document.getElementById("surpriseContent");
+            
+            if (password === correctPassword) {
+                content.style.display = "block";
+                setTimeout(() => { content.style.opacity = "1"; }, 100);
+            } else {
+                alert("Oops! Try again, my Love. 💜");
+            }
+        }
+    </script>
+</body>
+</html>
